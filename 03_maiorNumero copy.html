@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que peça ao usuário para informar cinco números.
+    No final, apresente o maior número informado pelo usuário.
+    */
+
+    //ENTRADA
+let num = 0;
+
+    //PROCESSAMENTO
+for (let v = 0; v < 5; v++){
+const otherNum = Number(prompt("Insira um numero"));
+if(num < otherNum){
+    num = otherNum;
+}
+}
+    //SAÍDA
+alert(`${num} é o maior numero`)
+</script>

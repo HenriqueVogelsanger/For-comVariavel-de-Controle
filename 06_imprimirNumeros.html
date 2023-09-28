@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que pergunte ao usuário um número inicial e um número final. Verifique se o número inicial`
+     é menor que o número final e apresente na tela os números ímpares e os números pares que estão 
+     entre os dois números. Se o número inicial for maior ou igual ao número final, 
+     apresente mensagem de erro para o usuário, informando a regra para o número inicial e número final.
+    */
+
+    //ENTRADA
+    let numInicial = Number(prompt("Insira um numero inicial"))
+    let numFinal = Number(prompt("Insira um numero final diferente do primeiro"))
+    let pares = []
+    let impares = []
+    //PROCESSAMENTO
+    if (numFinal == numInicial) {
+        alert("A questão não pode ser realizada pois os numeros são iguais");
+    }
+    else if (numFinal > numInicial) {
+        for (let v = numInicial; v < numFinal; v++) {
+            if (v % 2 == 0) {
+                pares.push(v);
+            }
+            else {
+                impares.push(v);
+            }
+        }
+        alert(`Os numeros pares dentres os numero que voce escolheu foram ${pares.join(", ")} \n e os impares foram ${impares.join(", ")}`)
+
+    }
+    else{
+     alert(`A questão não pode ser realizada pois o numero inicial é maior do que o numero final `)
+    }
+    //SAÍDA
+</script>

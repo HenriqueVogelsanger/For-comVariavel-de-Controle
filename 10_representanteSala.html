@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Peça para o programa perguntar ao professor regente o nome dos três candidatos a representante da sala.
+    Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
+    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação,
+     com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
+    */
+
+    //ENTRADA
+
+
+    //PROCESSAMENTO
+    const candidato1 = prompt("Qual o nome do primeiro candidato?").toLowerCase();
+    const candidato2 = prompt("Qual o nome do segundo candidato?").toLowerCase();
+    const candidato3 = prompt("Qual o nome do terceiro candidato?").toLowerCase();
+    const num = Number(prompt("Numero de alunos que vão votar"))
+    let voto1 = 0
+    let voto2 = 0
+    let voto3 = 0
+for (let votacao = 1; votacao <= num; votacao++) {
+    let resultado = prompt(`Você ira votar no 1- ${candidato1}, 2- ${candidato2} ou 3- ${candidato3}`)
+    if (voto == candidato1 || resultado == 1) {
+            voto1++;
+        } else if (voto == candidato2 || resultado == 2) {
+            voto2++;
+        } else if (voto == candidato3 || resultados == 3) {
+            voto3++;
+}
+}
+let porcentagem1 = (candidato1 / num) * 100
+    let porcentagem2 = (candidato2 / num) * 100
+    let porcentagem3 = (candidato3 / num) * 100
+    //SAÍDA
+    alert(`${candidato1} ficou com ${voto1} votos ${porcentagem1}% dos votos \n ${candidato2} ficou com ${voto2} votos ${porcentagem2}% dos votos \n ${candidato3} ficou com ${voto3} votos ${porcentagem3}% dos votos`);
+
+//SAÍDA
+
+</script>
